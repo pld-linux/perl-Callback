@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Callback perl module
-Summary(pl):	Modu³ perla Callback
+Summary:	Callback Perl module - object interface for function callbacks
+Summary(pl):	Modu³ Perla Callback - interfejs obiektowy odwo³añ do funkcji
 Name:		perl-Callback
 Version:	1.04
 Release:	2
-License:	GPL
+License:	free to use
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Callback/Callback-%{version}.tar.gz
 # Source0-md5:	165f87e56578fefd32f8c9602365a1cd
@@ -14,11 +14,15 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Callback perl module provides a simple interface for function
-callbacks.
+Callback Perl module provides a standard interface to register
+callbacks.  Those callbacks can be either purely functional (i.e. a
+function call with arguments) or object-oriented (a method call on an
+object).
 
 %description -l pl
-Modu³ perla Callback udostêpnia prosty interfejs dla odwo³añ funkcji.
+Modu³ Perla Callback udostêpnia prosty interfejs do rejestrowania
+odwo³añ. Odwo³ania te mog± byæ czysto funkcyjne (tzn. funkcja wywo³ana
+z argumentami) lub obiektowe (wywo³anie metody na obiekcie).
 
 %prep
 %setup -q -n Callback-%{version}
