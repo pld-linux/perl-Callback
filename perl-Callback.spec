@@ -26,7 +26,7 @@ Modu³ perla Callback udostêpnia prosty interfejs dla odwo³añ funkcji.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
