@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Callback Perl module - object interface for function callbacks
 Summary(pl):	Modu³ Perla Callback - interfejs obiektowy odwo³añ do funkcji
@@ -32,10 +36,13 @@ z argumentami) lub obiektowe (wywo³anie metody na obiekcie).
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
