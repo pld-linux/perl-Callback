@@ -6,12 +6,12 @@
 Summary:	Callback Perl module - object interface for function callbacks
 Summary(pl):	Modu³ Perla Callback - interfejs obiektowy odwo³añ do funkcji
 Name:		perl-Callback
-Version:	1.04
-Release:	3
+Version:	1.05
+Release:	1
 License:	free to use
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Callback/Callback-%{version}.tar.gz
-# Source0-md5:	165f87e56578fefd32f8c9602365a1cd
+# Source0-md5:	5de3d924dcd1133a1f3dcb8f81452e92
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
