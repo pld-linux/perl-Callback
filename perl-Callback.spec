@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Callback
 Name:		perl-Callback
 Version:	1.01
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Callback/Callback-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Callback/Callback-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,7 +15,8 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Callback perl module provides a simple interface for function callbacks.
+Callback perl module provides a simple interface for function
+callbacks.
 
 %description -l pl
 Modu³ perla Callback udostêpnia prosty interfejs dla odwo³añ funkcji.
