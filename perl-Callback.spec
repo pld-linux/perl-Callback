@@ -2,8 +2,8 @@
 Summary:	Callback perl module
 Summary(pl):	Modu³ perla Callback
 Name:		perl-Callback
-Version:	1.02
-Release:	3
+Version:	1.03
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
