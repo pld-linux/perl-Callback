@@ -25,7 +25,7 @@ Modu³ perla Callback udostêpnia prosty interfejs dla odwo³añ funkcji.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
