@@ -3,11 +3,11 @@ Summary:	Callback perl module
 Summary(pl):	Modu³ perla Callback
 Name:		perl-Callback
 Version:	1.04
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Callback/Callback-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +23,8 @@ Modu³ perla Callback udostêpnia prosty interfejs dla odwo³añ funkcji.
 %setup -q -n Callback-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -37,5 +38,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/Callback.pm
+%{perl_vendorlib}/Callback.pm
 %{_mandir}/man3/*
