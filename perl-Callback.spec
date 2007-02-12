@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Callback
 Summary:	Callback Perl module - object interface for function callbacks
-Summary(pl):	Modu≥ Perla Callback - interfejs obiektowy odwo≥aÒ do funkcji
+Summary(pl.UTF-8):   Modu≈Ç Perla Callback - interfejs obiektowy odwo≈Ça≈Ñ do funkcji
 Name:		perl-Callback
 Version:	1.06
 Release:	1
@@ -24,10 +24,10 @@ callbacks. Those callbacks can be either purely functional (i.e. a
 function call with arguments) or object-oriented (a method call on an
 object).
 
-%description -l pl
-Modu≥ Perla Callback udostÍpnia prosty interfejs do rejestrowania
-odwo≥aÒ. Odwo≥ania te mog± byÊ czysto funkcyjne (tzn. funkcja wywo≥ana
-z argumentami) lub obiektowe (wywo≥anie metody na obiekcie).
+%description -l pl.UTF-8
+Modu≈Ç Perla Callback udostƒôpnia prosty interfejs do rejestrowania
+odwo≈Ça≈Ñ. Odwo≈Çania te mogƒÖ byƒá czysto funkcyjne (tzn. funkcja wywo≈Çana
+z argumentami) lub obiektowe (wywo≈Çanie metody na obiekcie).
 
 %prep
 %setup -q -n Callback-%{version}
