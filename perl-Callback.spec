@@ -13,6 +13,7 @@ License:	free to use
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Callback/Callback-%{version}.tar.gz
 # Source0-md5:	270e8cde126409c45294886d34b17408
+URL:		http://search.cpan.org/dist/Callback/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -52,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc CHANGELOG README
 %{perl_vendorlib}/Callback.pm
 %{_mandir}/man3/*
