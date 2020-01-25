@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Callback
 Summary:	Callback Perl module - object interface for function callbacks
 Summary(pl.UTF-8):	Moduł Perla Callback - interfejs obiektowy odwołań do funkcji
